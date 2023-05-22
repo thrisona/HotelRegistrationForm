@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation Form</title>
+    <style>
+        body {
+          font-family: Georgia, sans-serif;
+          background-image: url(hotel1.avif);
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-size: large;
+        }
+        
+        .container {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        
+        .form-group {
+          margin-bottom: 50px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="phone"],
+        .form-group input[type="date"],
+        .form-group input[type="number"],
+        .form-group select {
+          width: 100%;
+          height: 12px;
+          padding: 12px 20px;
+          margin: 8px 0;
+          border-radius: 2px;
+          border: 1px solid #181717;
+        }
+        .form-group input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <h2>Hotel Reservation Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">First Name:</label>
+            <input type="text" name="First Name" placeholder="Your First Name" required>
+            <label for="name">Last Name:</label>
+            <input type="text" name="Last Name" placeholder="Your Last Name" required>
+            <label for="name">Phone:</label>
+            <input type="phone" name="Phone number" placeholder="Your Phone number" required>
+            <label for="name">Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <label for="name">Arrival Date:</label>
+            <input type="date" name="Arrival Date" placeholder="Your Arrival Date" required>
+            <label for="name">Departure Date:</label>
+            <input type="date" name="Departure Date" placeholder="Your Departure Date" required>
+            <label for="name">Number of Adults:</label>
+            <input type="number" name="Number of Adults" placeholder="Number of Adults" required>
+            <label for="name">Number of Children:</label>
+            <input type="number" name="Number of Children" placeholder="Number of Children" required>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
